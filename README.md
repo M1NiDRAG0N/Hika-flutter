@@ -1,6 +1,6 @@
-# hika
+# Hi & ka
 
-hiragana & Katakana application
+Hiragana & Katakana application
 
 ## Getting Started
 

@@ -43,3 +43,44 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Flutter build
+build/
+.flutter-plugins
+.packages
+pubspec.lock
+
+# VSCode 설정
+.vscode/
+
+# Android 관련 빌드 파일
+android/.gradle/
+android/app/build/
+
+# iOS 관련 빌드 파일
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/App.framework
+ios/Flutter/GeneratedPluginRegistrant.*
+ios/Flutter/ephemeral/
+
+# Xcode 자동 생성 파일
+*.xcuserstate
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# Firebase 관련 비밀 파일
+*.keystore
+*.jks
+
+# 기타 IDE 불필요 파일
+*.tmp
+
+# 환경변수 파일
+.env
+
+.gitignore
