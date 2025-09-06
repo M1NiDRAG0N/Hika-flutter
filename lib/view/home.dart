@@ -1,26 +1,32 @@
 import 'package:flutter/material.dart';
 import 'setting.dart';
-// import 'data.dart';
+import '../data/const.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class home extends StatelessWidget {
+  const home({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("일본어 퀴즈")),
+      appBar: AppBar(
+        title: const Text("히 & 카")
+        , centerTitle: true,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: const Text("히라가나 퀴즈"),
+              child: const Text(
+                "히라가나 퀴즈"
+                , style: TextStyle(fontSize: 30),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (_) => SettingPage(
-                      kanaMap: {},
+                      kanaMap: hiraganaMap,
                       title: "히라가나",
                     ),
                   ),
@@ -29,13 +35,16 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              child: const Text("가타카나 퀴즈"),
+              child: const Text(
+                 "가타카나 퀴즈"
+                , style: TextStyle(fontSize: 30),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (_) => SettingPage(
-                      kanaMap: {},
+                      kanaMap: katakanaMap,
                       title: "가타카나",
                     ),
                   ),

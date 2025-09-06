@@ -115,7 +115,7 @@ class _QuizPageState extends State<QuizPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(kanaToKorean ? kana : korean, style: const TextStyle(fontSize: 64)),
+            Text(kanaToKorean ? kana : korean, style: const TextStyle(fontSize: 200)),
             TextField(
               controller: controller,
               decoration: InputDecoration(
@@ -128,7 +128,7 @@ class _QuizPageState extends State<QuizPage> {
             const SizedBox(height: 20),
             Text(feedback, style: const TextStyle(fontSize: 18)),
             const SizedBox(height: 20),
-            Text("점수: $score"),
+            Text("점수: $score", style: const TextStyle(fontSize: 20)),
           ],
         ),
       ),

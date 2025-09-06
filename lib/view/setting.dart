@@ -20,9 +20,10 @@ class _SettingPageState extends State<SettingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("${widget.title} 설정")),
-      body: Padding(
-        padding: const EdgeInsets.all(20),
+      body: Center(
+        // padding: const EdgeInsets.all(20),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text("문제 개수", style: TextStyle(fontSize: 18)),
             DropdownButton<int>(
